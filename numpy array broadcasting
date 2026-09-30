@@ -1,0 +1,40 @@
+import numpy as np
+
+# 1D arrays
+prices = np.array([100, 200, 300])
+discount = np.array([10, 20, 30])
+
+print("Prices:", prices)
+print("Discount:", discount)
+
+print("After Addition:", prices + discount)
+print("After Subtraction:", prices - discount)
+print("Multiplication:", prices * discount)
+print("Division:", prices / discount)
+print("Square of Prices:", prices ** 2)
+
+# 2D array
+sales = np.array([[10, 20, 30],
+                  [40, 50, 60]])
+
+bonus = np.array([5, 10, 15])
+
+# Broadcasting
+print("\nSales Matrix:")
+print(sales)
+
+print("\nBonus:")
+print(bonus)
+
+print("\nAfter Broadcasting:")
+print(sales + bonus)
+
+# Aggregation functions
+print("\nTotal Sales:", sales.sum())
+print("Average Sales:", sales.mean())
+print("Minimum Sales:", sales.min())
+print("Maximum Sales:", sales.max())
+
+# Axis operations
+print("\nColumn-wise Sum:", sales.sum(axis=0))
+print("Row-wise Sum:", sales.sum(axis=1))
